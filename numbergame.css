@@ -1,0 +1,41 @@
+#submit{
+  color: white;
+  background-color: blue;
+  border: none;
+  width: 100px;
+  height: 25px;
+  border-radius: 50px;
+}
+#Wrong{
+  display: block;
+  margin-left: 60px;
+  margin-top: 20px;
+  color: white;
+  background-color: red;
+  border: none;
+  width: 100px;
+  height: 25px;
+  border-radius: 50px;
+}
+#Right{
+  display: block;
+  margin-left: 60px;
+  margin-top: 20px;
+  color: white;
+  background-color: green;
+  border: none;
+  width: 100px;
+  height: 25px;
+  border-radius: 50px;
+}
+.main{
+  text-align: center;
+  margin: 25% 10% 25% 10%;
+  background-color: orange;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-radius: 50px;
+}
+body{
+  background-color: green;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Number Game</title>
+
+  <link rel="stylesheet" href="numbergame.css">
+  <link rel="stylesheet" href="next.css">
+
+</head>
+
+<body>
+  <div class="main">
+    <h2> Answer the following questions </h2>
+    <h3>QUESTION 1 :</h3>
+    <p id="question"></p>
+
+
+    Ans :<input type="text" id="input"><br>
+    <p id="result"></p>
+
+
+    <button type="submit" id="submit" onclick="v(), c();" > SUBMIT</button>
+
+    <p id="result1">click on submit to view your result</p>
+
+    <!-- Next -->
+    <a href="additiongame.html">
+      <button type="submit" id="next" > Next
+      </button>
+    </a> 
+    
+  </div>
+
+
+  
+
+    
+  
+  
+  
+
+
+  <script>
+    //Generating random numbers for the questions/ CORE .
+    const min = 0;
+    const max = 100;
+    const n1 = Math.floor(Math.random()* (max - min) );
+    const n2 = Math.floor(Math.random()* (max - min) );
+    const Question = "Subract " + n1 + " from "  + n2;
+    //let Result = (Number - Number1 );
+    let result = n2 - n1 ;
+    let Input = document.getElementById('input').value;
+     
+     function v() {
+      var Input = document.getElementById('input').value;
+      var result = n2 - n1 ;
+      if (Input == result) {
+            document.getElementById('result1').innerHTML = "congratulations"
+          } else {
+            document.getElementById('result').innerHTML = "Ans =" + " " + result
+      + " Better luck next time";
+          }
+     }
+    
+     document.getElementById('question').innerHTML = Question;
+     
+
+     function c(){
+      var Input = document.getElementById('input').value;
+      var result = n2 - n1 ;
+      if (Input == result){
+        document.getElementById('next').innerHTML = "Next";
+        document.getElementById('submit').style.display = "none";
+        document.getElementById('next').style.display = "unset";
+      }
+     }
+    
+     
+     
+
+     
+  </script>
+</body>
+</html>
